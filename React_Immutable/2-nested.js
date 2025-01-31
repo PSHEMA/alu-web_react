@@ -1,5 +1,5 @@
-import { fromJS } from "immutable";
+import { fromJS } from 'immutable';
 
-export default function accessImmutableObject(obj, array) {
-  return fromJS(obj).getIn(array, undefined);
+export default function accessImmutableObject(object, array) {
+  return fromJS(object).getIn(array);
 }
